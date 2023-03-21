@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Electronic Clock</title>
+  <link rel="stylesheet" href="clock.css">
+</head>
+<body>
+  <div class="container">
+    <div id="date-and-controls-container">
+    <div class="date-toggle">
+      <input type="checkbox" id="date-toggle-checkbox" >
+      <label for="date-toggle-checkbox">Hide Date</label>
+    </div>
+    <div class="font-size-controls">
+      <button id="date-size-up">+</button>
+      <button id="date-size-down">-</button>
+    </div>
+    </div>
+    <div class="clock-container">
+      <div id="clock-date-container">
+      <div class="clock-date"></div>
+      </div>
+      <div class="clock" id="clock">
+        <span id="hours"></span>
+        <span id="colon">:</span>
+        <span id="minutes"></span>
+        <span id="am-pm"></span>
+      </div>
+    </div>
+    <div class="clock-size-controls">
+      <label for="clock-size-slider">Clock Size:</label>
+      <input type="range" id="clock-size-slider" min="2" max="12" value="10">
+    </div>
+    <div class="dark-mode-controls">
+      <button id="dark-mode-minus-btn">-</button>
+      <button id="dark-mode-btn">Dark mode</button>
+      <button id="dark-mode-plus-btn">+</button>
+    </div>
+  </div>
+  <br>
+  <div class="color-controls">
+    <label for="background-color">Custom background Color:</label>
+    <input type="color" id="background-color" name="background-color" value="#ffffff">
+  </div>
+  <h1>Clock author: Merilyn Litvinov</h1>
+  <script src="clock.js"></script>
+</body>
+</html>

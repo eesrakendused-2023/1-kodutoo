@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    color: #333;
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin-top: 4em;
+    transition: transform 0.3s ease-out;
+  }
+
+  h1:hover {
+    transform: scale(1.2);
+    transition: transform 1s;
+  }
+
+  .font-size-controls {
+    height: 3em;
+  }
+ 
+  #clock-size-slider {
+    width: 50%;
+    margin-bottom: 2rem;
+  }
+
+  #clock-date-container {
+    line-height: 80%;
+  }
+
+  #dark-mode-btn {
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  #dark-mode-btn:hover, #dark-mode-btn.dark-mode-btn {
+    background-color: #fff;
+    color: #333;
+  }
+
+  #dark-mode-minus-btn, #dark-mode-plus-btn {
+    font-size: 3rem;
+    border: none;
+    background-color: transparent;
+    color: #8f8f8f;
+    cursor: pointer;
+    margin: 0 0.5rem;
+    transition: transform 0.3s ease-out;
+  }
+
+  #dark-mode-minus-btn:hover, #dark-mode-plus-btn:hover {
+    transform: scale(1.2);
+    transition: transform 1s;
+  }
+
+  .dark-mode {
+    background-color: #333;
+    color: #fff;
+  }
+
+  #date-size-down, #date-size-up {
+    font-size: 3rem;
+    border: none;
+    background-color: transparent;
+    color: #8f8f8f;
+    cursor: pointer;
+    margin: 0 0.5rem;
+  }
+
+  .color-controls {
+    margin-bottom: 2em;
+  }
