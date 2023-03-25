@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pille's electronic Watch</title>
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="world_clock.css">
+    <style>
+      body {
+        
+        background-image: url('your-image-url.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        transition: none;
+        
+      }
+
+    </style>
+    
+  </head>
+<body>
+
+<div id="time-zone-selector" class="time-zone-selector">
+          <label for="time-zone" class="time-zone-label">Change time zone:</label>
+          <select id="time-zone" class="time-zone-select">
+            <option value="-12">UTC-12</option>
+            <option value="-11">UTC-11</option>
+            <option value="-10">UTC-10</option>
+            <option value="-9">UTC-9</option>
+            <option value="-8">UTC-8</option>
+            <option value="-7">UTC-7</option>
+            <option value="-6">UTC-6</option>
+            <option value="-5">UTC-5</option>
+            <option value="-4">UTC-4</option>
+            <option value="-3">UTC-3</option>
+            <option value="-2">UTC-2</option>
+            <option value="-1">UTC-1</option>
+            <option value="0" selected>UTC</option>
+            <option value="1">UTC+1</option>
+            <option value="2">UTC+2</option>
+            <option value="3">UTC+3</option>
+            <option value="4">UTC+4</option>
+            <option value="5">UTC+5</option>
+            <option value="6">UTC+6</option>
+            <option value="7">UTC+7</option>
+            <option value="8">UTC+8</option>
+            <option value="9">UTC+9</option>
+            <option value="10">UTC+10</option>
+            <option value="11">UTC+11</option>
+            <option value="12">UTC+12</option>
+            <option value="13">UTC+13</option>
+            <option value="14">UTC+14</option>
+          </select>
+</div>
+
+<div id="background-selector" class="background-selector">
+    <label for="background-image">Change Background Image:</label>
+    <select id="background-image">
+      <option value="images/516817-dark-space-4k.jpg">Image 1</option>
+      <option value="images/WallpaperDog-20354169.jpg">Image 2</option>
+      <option value="images/wp3493595-black-space-wallpaper-hd.jpg">Image 3</option>
+      <option value="images/WallpaperDog-20354145.jpg">Image 3</option>
+  </select>
+</div>
+
+<div id="world-clock-selector" class="world-clock-selector">
+  <label for="london-city" class="change-city-label">Change City:</label>
+  <select id="london-city" class="world-clock-select2">
+        <option value="Europe/London" selected>London</option>
+        <option value="Europe/Paris">Paris</option>
+        <option value="Australia/Sydney">Sydney</option>
+      </select>
+</div>
+<div id="world-clock-selector2" class="world-clock-selector2">
+  <label for="london-city" class="change-city-label">Change City:</label>
+  <select id="new-york-city" class="world-clock-select">
+        <option value="America/New_York" selected>New York</option>
+        <option value="Europe/Paris">Paris</option>
+        <option value="America/Toronto">Toronto</option>
+      </select>
+</div>
+
+<div id="world-clock-selector3" class="world-clock-selector3">
+   <label for="tokyo-city" class="change-city-label">Change City:</label>
+  <select id="tokyo-city" class="world-clock-select3">
+        <option value="Asia/Tokyo" selected>Tokyo</option>
+        <option value="Europe/Paris">Paris</option>
+        <option value="Australia/Sydney">Sydney</option>
+      </select>
+</div>
+
+
+<h1>Local Time</h1>   
+<div class="watch-container">
+  <div class="frame" id="frame">
+    <div class="frame-arc" id="frame"></div>
+  </div>
+    <div class="watch-face"></div>
+      <div class="dateTimeContainer">
+         <div class="date"></div>
+         <div class="year"></div>
+      </div>
+    <div class="electronic-number" id="time"></div> 
+</div>
+
+
+
+<div class="world-clock-container" id="wccontainer">
+  <div class="world-clock-row">
+    <div class="world-clock-item">
+      <div class="world-clock-location">New York</div>
+      <div class="world-clock-time" id="new-york-time"></div>
+    </div>
+    <div class="world-clock-item">
+      <div class="world-clock-location">London</div>
+      <div class="world-clock-time" id="london-time"></div>
+    </div>
+    <div class="world-clock-item">
+      <div class="world-clock-location">Tokyo</div>
+      <div class="world-clock-time" id="tokyo-time"></div>
+    </div>
+  </div>
+</div>
+
+
+    <script src="app.js"></script>
+  </body>
+
+  <footer>
+  <div class="container">
+    <p>&copy; 2023 Eesrakenduste arendamine, Tallinna Ülikool. Autor: Pille Allvee</p>
+    <p><a href="https://github.com/pilleae/eesrakendused">Veebirakenduse Githubi repositoorium</a></p>
+    
+  </div>
+</footer>
+</html>
+
