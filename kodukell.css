@@ -1,0 +1,63 @@
+.clock{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10em;
+    background-color: gold;
+    color: crimson;
+}
+
+.date-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5em;
+    background-color: crimson;
+    color: lightgrey;
+}
+
+.day-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    background-color: gold;
+    color: crimson;
+}
+
+.author{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    background-color: cadetblue;
+    color: darkblue;
+}
+
+.repo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    background-color: cadetblue;
+    color: darkgreen;
+}
+
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    background-color: lightyellow;
+    color: black;
+}
+
+.small{
+    font-size: 5em;
+}
