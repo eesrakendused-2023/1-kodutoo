@@ -1,0 +1,93 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#clock {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  border: 5px solid gray;
+  padding: 20px;
+  display: inline-block;
+}
+
+#size-controls {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#minus-button,
+#plus-button {
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #ddd;
+  color: #333;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+#minus-button:hover,
+#plus-button:hover {
+  background-color: #bbb;
+}
+
+#color-controls {
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.color-button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+#red-button {
+  background-color: red;
+}
+
+#orange-button {
+  background-color: orange;
+}
+
+#yellow-button {
+  background-color: yellow;
+}
+
+#green-button {
+  background-color: green;
+}
+
+#blue-button {
+  background-color: blue;
+}
+
+#indigo-button {
+  background-color: indigo;
+}
+
+#violet-button {
+  background-color: violet;
+}
+
+#name {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
