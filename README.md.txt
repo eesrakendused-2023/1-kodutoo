@@ -1,0 +1,2 @@
+
+Antud rakendus näitab hetke kellaaega ja kuupäeva (päev, kuupäev, kuu, aasta). Rakenduse kuueks funktsiooniks mida saab muuta on kuupäeva suuruse muutmine (kell on standartne seda kasutaja muuta ei saa) , rakenduse keelt (eesti keel või inglise keel) ning on võimalus muuta rakenduse taustavärvi (kas siis light mode või dark mode).

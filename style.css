@@ -1,0 +1,52 @@
+#container{
+  color: #A9A9A9;
+  background: black;
+  font-family: 'Concert One', 'Times New Roman', Times, serif;
+  width: 750px;
+  padding: 40px 40px;
+}
+
+#fullDate{
+  letter-spacing: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+body{
+   height: 120vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background: black;
+   
+}
+
+#time{
+   display: flex;
+   flex-direction: row;
+   font-size: 200px;
+   justify-content: center;
+}
+
+#bigger, #smaller, #english, #estonian, #dayColor, #nightColor{
+  font-family: "cali", sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  background: darkgrey;
+  width: 80px;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 40px rgba(0,0,0,0.1);
+}
+
+#author{
+  color: darkgray;
+  font-size: 30px;
+}
