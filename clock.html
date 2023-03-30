@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8">
+  <title>Elektrooniline kell, Katriin Liselle Eenmaa</title>
+  <link rel="stylesheet" href="clock.css">
+</head>
+<body>
+  <div class="container">
+    <div class="time" id="time"></div>
+    <div class="date" id="date"></div>
+    <div class="timezone">
+      <label for="timezone-select">Vali ajavöönd:</label>
+      <select id="timezone-select">
+        <option value="Europe/Tallinn">Eesti, Tallinn</option>
+        <option value="America/New_York">USA, New York</option>
+        <option value="Asia/Tokyo">Jaapan, Tokyo</option>
+        <option value="Australia/Sydney">Austraalia, Sydney</option>
+        <option value="America/Los_Angeles">USA, Los Angeles</option>
+      </select>
+    </div>
+    <div class="alarm">
+      <label for="alarm-time">Seadista alarm. PS! ALARM TÖÖTAB EESTI AJA JÄRGI:</label>
+      <input type="datetime-local" id="alarm-time">
+      <button id="set-alarm-btn">Seadista alarm</button>
+      <button id="cancel-alarm-btn">Tühista alarm</button>
+    </div>
+    <button class="day-night-btn" id="day-night-btn">Mine öörežiimi</button>
+  </div>
+  <script src="clock.js"></script>
+</body>
+</html>
