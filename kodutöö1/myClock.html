@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="myClock.css">
+    <script src="myClock.js" defer></script>
+    <style>
+      .white-background {
+        background-color: white;
+        color: black;
+      }  
+      .black-background {
+        background-color: black;
+        color: white;
+      }
+    </style>
+</head>
+
+<audio src="Gladys Knight - Neither One Of Us (First To Say Goodbye) (DJ Micks - Manoo Style Remix).mp3" autoplay loop></audio>
+<body class="white-background">
+  <h3 style="display: flex;">Autor
+  <a href="https://github.com/KristelKolkanen/Eesrakendused-23" style="text-decoration: none;">-Kristel Kolkanen</a>
+  </h3>
+
+
+  <div class="btn">
+  <button class="button-89" role="button" onclick="changeFont()">Muuda fonti</button>
+  </div>
+  <br>
+
+  <div id="tallinn"> 
+    <div class="clock">
+      <div id="hidden-est">Eesti</div> 
+      <div class="location" id="hover-est">Tallinn</div>
+      <div class="time tallinn" id="time1"></div>
+      <div class="date-tallinn"></div>
+    </div>
+  </div>
+  <div id="newyork"> 
+    <div class="clock">
+      <div id="hidden-usa">USA</div>
+      <div class="location" id="hover-usa">New York</div>  
+      <div class="time new-york" id="time2"></div>
+      <div class="date-new-york"></div>
+    </div>
+  </div>
+  <div id="tokyo"> 
+    <div class="clock"> 
+      <div id="hidden-jpn">Japan</div> 
+      <div class="location" id="hover-jpn">Tokyo</div> 
+      <div class="time tokyo" id="time3"></div>
+      <div class="date-tokyo"></div>
+    </div>
+  </div>
+</body>
+</html>
