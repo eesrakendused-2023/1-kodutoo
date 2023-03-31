@@ -40,7 +40,6 @@ function changeBackgroundColor() {
 //Toggle buttons
 function toggleButtons() {
   const buttonContainer = document.querySelector('.button-container');
-  console.log("siiin")
   if (buttonContainer.style.display === 'none') {
     buttonContainer.style.display = 'flex';
   } else {
@@ -94,3 +93,15 @@ document.addEventListener('keydown', (event) => {
   }
   timeElement.style.transform = `translate(${x}px, ${y}px)`;
 });
+
+//Change font
+const timeVar = document.getElementById('time');
+const dateVar = document.getElementById('date');
+
+function changeFont() {
+  const fonts = ['Arial', 'Helvetica', 'Verdana', 'Georgia', 'Times New Roman', 'Courier New', 'Impact', 'Comic Sans MS'];
+  const fontIndex = Math.floor(Math.random() * fonts.length);
+  const newFont = fonts[fontIndex];
+  timeVar.style.fontFamily = newFont;
+  dateVar.style.fontFamily = newFont;
+}

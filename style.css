@@ -31,24 +31,21 @@ h1, h2 {
 button {
   font-size: 2rem;
   padding: 0.5rem;
-  border-radius: 50%;
   border: none;
-  background-color: #f1f1f1;
   cursor: pointer;
   transition: all 0.2s;
+  background-color: #ffffff76;
 }
 
 button:hover {
-  background-color: #ddd;
+  background-color: #dad5d56c;
 }
 
 button:active {
   transform: scale(0.9);
 }
-#color-btn{
-  font-size: 5vh;
-}
 
 .container {
   position: relative;
+  font-size: 10px;
 }
