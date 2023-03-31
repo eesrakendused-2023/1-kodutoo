@@ -2,6 +2,8 @@
 
 Autor: Katriin Liselle Eenmaa
 
+Lehe aadress: https://www.tlu.ee/~kleenmaa/kodutoo1/clock.html
+
 Autori nimi ja viide rakenduse repositooriumile on lehe jaluses.
 
 Eesrakenduste arendamise aine esimese kodutöö raames sai chatGPT abil valmis loodud elektrooniline kell. Elektrooniline kell näitab lisaks kellajale ka nädalapäeva ning kuupäeva koos aastaga. Lisasin kellale juurde 6 erinevat funktsionaalsust:
