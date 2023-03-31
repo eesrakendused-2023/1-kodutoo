@@ -13,3 +13,6 @@ Eesrakenduste arendamise aine esimese kodutöö raames sai chatGPT abil valmis l
 5) Color picker'i kaudu on võimalik valida uus taustavärv.
 6) Color picker'i kaudu on võimalik valida uus tekstivärv.
 
+![image](https://user-images.githubusercontent.com/114921891/229123919-d77da5d4-9944-432b-987e-e3ca5a4de842.png)
+
+
