@@ -1,0 +1,589 @@
+Make a js html responsive time and date page, including weekday and year. Make it look pretty
+Sure, here's an example of a responsive time and date page with weekday and year using HTML, CSS, and JavaScript:
+
+HTML:
+
+php
+Copy code
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Time and Date Page</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="time"></h1>
+      <h2 id="date"></h2>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
+CSS:
+
+css
+Copy code
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+JavaScript:
+
+javascript
+Copy code
+function updateTime() {
+  const now = new Date();
+  const hours = now.getHours().toString().padStart(2, '0');
+  const minutes = now.getMinutes().toString().padStart(2, '0');
+  const seconds = now.getSeconds().toString().padStart(2, '0');
+  const timeString = `${hours}:${minutes}:${seconds}`;
+  document.getElementById('time').textContent = timeString;
+
+  const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+  const dayOfWeek = daysOfWeek[now.getDay()];
+  const month = now.toLocaleString('default', { month: 'long' });
+  const dayOfMonth = now.getDate().toString().padStart(2, '0');
+  const year = now.getFullYear();
+  const dateString = `${dayOfWeek}, ${month} ${dayOfMonth}, ${year}`;
+  document.getElementById('date').textContent = dateString;
+}
+
+updateTime();
+setInterval(updateTime, 1000);
+This code will display the current time and date on a page, updating every second. The container div is used to center the time and date on the page, and the h1 and h2 elements are used to display the time and date, respectively. The CSS styles are used to make the text look pretty, and the JavaScript code is used to get the current time and date and update the HTML elements.
+
+
+
+
+Margen Peterson
+Make 2 buttons to the side, which allow 1) increase text size and 2) decrease text size
+Sure, here's an updated example with two buttons to increase and decrease the text size:
+
+HTML:
+
+php
+Copy code
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Time and Date Page</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="text-container">
+        <h1 id="time"></h1>
+        <h2 id="date"></h2>
+      </div>
+      <div class="button-container">
+        <button id="increase-btn">+</button>
+        <button id="decrease-btn">-</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
+CSS:
+
+css
+Copy code
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.text-container {
+  text-align: center;
+}
+
+h1, h2 {
+  font-size: 3rem;
+}
+
+.button-container {
+  margin-left: 1rem;
+}
+
+button {
+  font-size: 2rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+  border: none;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+button:active {
+  transform: scale(0.9);
+}
+JavaScript:
+
+javascript
+Copy code
+let fontSize = 3;
+
+function updateTime() {
+  const now = new Date();
+  const hours = now.getHours().toString().padStart(2, '0');
+  const minutes = now.getMinutes().toString().padStart(2, '0');
+  const seconds = now.getSeconds().toString().padStart(2, '0');
+  const timeString = `${hours}:${minutes}:${seconds}`;
+  document.getElementById('time').textContent = timeString;
+
+  const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+  const dayOfWeek = daysOfWeek[now.getDay()];
+  const month = now.toLocaleString('default', { month: 'long' });
+  const dayOfMonth = now.getDate().toString().padStart(2, '0');
+  const year = now.getFullYear();
+  const dateString = `${dayOfWeek}, ${month} ${dayOfMonth}, ${year}`;
+  document.getElementById('date').textContent = dateString;
+
+  document.getElementById('time').style.fontSize = `${fontSize}rem`;
+  document.getElementById('date').style.fontSize = `${fontSize}rem`;
+}
+
+updateTime();
+setInterval(updateTime, 1000);
+
+document.getElementById('increase-btn').addEventListener('click', () => {
+  fontSize += 0.5;
+  updateTime();
+});
+
+document.getElementById('decrease-btn').addEventListener('click', () => {
+  fontSize -= 0.5;
+  updateTime();
+});
+In this updated code, we have added two buttons with the IDs increase-btn and decrease-btn. We have also updated the HTML structure to include a text-container div and a button-container div to properly position the elements on the page. In the CSS, we have added styles for the buttons and updated the font sizes to be more reasonable for the screen size.
+
+In the JavaScript, we have added a fontSize variable to keep track of the current font size, and updated the updateTime function to set the font size of the time and date elements based on this variable. We have also added event listeners to the buttons to
+
+
+
+
+Margen Peterson
+Add a minimalistic background to the application
+Certainly, here's an updated code that adds a minimalistic background to the application:
+
+CSS:
+
+css
+Copy code
+body {
+  background-color: #f2f2f2;
+  background-image: radial-gradient(#ddd 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+In the CSS, we have added background properties to the body element to create a minimalistic background pattern. The background-color sets a light gray color as the background, while the background-image creates a radial gradient pattern with dark gray and transparent colors. The background-size sets the size of the pattern to 20px by 20px.
+
+Here's the full updated code with the background added:
+
+HTML:
+
+php
+Copy code
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Time and Date Page</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="text-container">
+        <h1 id="time"></h1>
+        <h2 id="date"></h2>
+      </div>
+      <div class="button-container">
+        <button id="increase-btn">+</button>
+        <button id="decrease-btn">-</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
+CSS:
+
+css
+Copy code
+body {
+  background-color: #f2f2f2;
+  background-image: radial-gradient(#ddd 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.text-container {
+  text-align: center;
+}
+
+h1, h2 {
+  font-size: 3rem;
+}
+
+.button-container {
+  margin-left: 1rem;
+}
+
+button {
+  font-size: 2rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+  border: none;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+button:active {
+  transform: scale(0.9);
+}
+JavaScript:
+
+javascript
+Copy code
+let fontSize = 3;
+
+function updateTime() {
+  const now = new Date();
+  const hours = now.getHours().toString().padStart(2, '0');
+  const minutes = now.getMinutes().toString().padStart(2, '0');
+  const seconds = now.getSeconds().toString().padStart(2, '0');
+  const timeString = `${hours}:${minutes}:${seconds}`;
+  document.getElementById('time').textContent = timeString;
+
+  const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+  const dayOfWeek = daysOfWeek[now.getDay()];
+  const month = now.toLocaleString('default', { month: 'long' });
+  const dayOfMonth = now.getDate().toString().padStart(2, '0');
+  const year = now.getFullYear();
+  const dateString = `${dayOfWeek}, ${month} ${dayOfMonth}, ${year}`;
+  document.getElementById('date').textContent = dateString;
+
+  document.getElementById('time').style.fontSize = `${fontSize}rem`;
+  document.getElementById('date').style.fontSize = `${fontSize}rem`;
+}
+
+updateTime();
+setInterval(updateTime, 1000);
+
+document.getElementById('increase-btn').addEventListener('click', () => {
+ 
+
+
+
+Margen Peterson
+add a button to randomly change color of the text
+Sure, here's an updated code that adds a button to randomly change the color of the text:
+
+HTML:
+
+php
+Copy code
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Time and Date Page</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="text-container">
+        <h1 id="time"></h1>
+        <h2 id="date"></h2>
+      </div>
+      <div class="button-container">
+        <button id="increase-btn">+</button>
+        <button id="decrease-btn">-</button>
+        <button id="color-btn">Change Color</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
+CSS:
+
+css
+Copy code
+body {
+  background-color: #f2f2f2;
+  background-image: radial-gradient(#ddd 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.text-container {
+  text-align: center;
+}
+
+h1, h2 {
+  font-size: 3rem;
+}
+
+.button-container {
+  margin-left: 1rem;
+}
+
+button {
+  font-size: 2rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+  border: none;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+button:active {
+  transform: scale(0.9);
+}
+JavaScript:
+
+javascript
+Copy code
+let fontSize = 3;
+
+function updateTime() {
+  const now = new Date();
+  const hours = now.getHours().toString().padStart(2, '0');
+  const minutes = now.getMinutes().toString().padStart(2, '0');
+  const seconds = now.getSeconds().toString().padStart(2, '0');
+  const timeString = `${hours}:${minutes}:${seconds}`;
+  document.getElementById('time').textContent = timeString;
+
+  const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+  const dayOfWeek = daysOfWeek[now.getDay()];
+  const month = now.toLocaleString('default', { month: 'long' });
+  const dayOfMonth = now.getDate().toString().padStart(2, '0');
+  const year = now.getFullYear();
+  const dateString = `${dayOfWeek}, ${month} ${dayOfMonth}, ${year}`;
+  document.getElementById('date').textContent = dateString;
+
+  document.getElementById('time').style.fontSize = `${fontSize}rem`;
+  document.getElementById('date').style.fontSize = `${fontSize}rem`;
+}
+
+function randomColor() {
+  const letters = '0123456789ABCDEF';
+  let color = '#';
+  for (let i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
+
+updateTime();
+setInterval(updateTime, 1000);
+
+document.getElementById('increase-btn').addEventListener('click', () => {
+  fontSize += 0.1;
+  updateTime();
+});
+
+document.getElementById('decrease-btn').addEventListener('click', () => {
+  fontSize -= 0.1;
+  if (fontSize < 1) {
+    fontSize = 1;
+  }
+  updateTime();
+});
+
+document.getElementById('color-btn
+
+
+
+Margen Peterson
+give me a function to change the background color 
+Sure, here's a JavaScript function that will change the background color of the page to a random color when called:
+
+javascript
+Copy code
+function changeBackgroundColor() {
+  const letters = '0123456789ABCDEF';
+  let color = '#';
+  for (let i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  document.body.style.backgroundColor = color;
+}
+This function generates a random hexadecimal color code and sets it as the background color of the page's body element.
+
+
+
+
+Margen Peterson
+give me a function to change the background color randomly but only allow light colors
+Sure, here's a modified version of the function that generates random light colors:
+
+javascript
+Copy code
+function changeBackgroundColor() {
+  let color = `hsl(${Math.floor(Math.random() * 360)}, 100%, 80%)`;
+  document.body.style.backgroundColor = color;
+}
+This function generates a random color using the HSL color model, where the hue (the color) is a random value between 0 and 359, the saturation is set to 100% (full intensity), and the lightness (the brightness) is set to 80%, which produces mostly light colors.
+
+
+
+
+Margen Peterson
+create a function that allows to hide the buttons with click
+Sure, here's a JavaScript function that toggles the visibility of the button container when called:
+
+arduino
+Copy code
+function toggleButtons() {
+  const buttonContainer = document.querySelector('.button-container');
+  if (buttonContainer.style.display === 'none') {
+    buttonContainer.style.display = 'flex';
+  } else {
+    buttonContainer.style.display = 'none';
+  }
+}
+This function first selects the button container element using querySelector, and then checks its display CSS property to see if it is currently set to none (hidden). If it is hidden, the function changes the display property to flex to show the button container. If it is not hidden, the function changes the display property to none to hide the button container.
+
+You can then call this function from an event listener on an element of your choice, such as a button or the main container. For example, to call this function when clicking the main container, you can add the following code to your JavaScript:
+
+javascript
+Copy code
+document.querySelector('.container').addEventListener('click', toggleButtons);
+This code adds a click event listener to the main container element, and passes the toggleButtons function as the event handler.
+
+
+
+
+Margen Peterson
+how to display it on html
+To display the button container and the buttons, you can add the following HTML code to your page:
+
+php
+Copy code
+<div class="container">
+  <h1>Today is <span id="date"></span></h1>
+  <h2>It is <span id="time"></span></h2>
+  <div class="button-container">
+    <button onclick="increaseTextSize()">+</button>
+    <button onclick="decreaseTextSize()">-</button>
+    <button onclick="changeTextColor()">Change Text Color</button>
+    <button onclick="changeBackgroundColor()">Change Background Color</button>
+  </div>
+</div>
+This code creates a div container with a heading showing the date and time, and a div container with the buttons. Each button has an onclick attribute that calls a JavaScript function when clicked.
+
+You can also add some CSS to style the elements:
+
+css
+Copy code
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.button-container button {
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #ddd;
+  border: none;
+  cursor: pointer;
+}
+
+.button-container button:hover {
+  background-color: #ccc;
+}
+This CSS sets the font family and background color of the page, and styles the container, button container, and buttons. You can adjust the styles to your liking.
+
+
+
+
+Margen Peterson
+can you add function to be able to move the clock text around with arrows
+Sure! Here's a modified version of the JavaScript code that adds event listeners for arrow keys to move the clock text around:
+
+javascript
+Copy code
+const timeElement = document.getElementById('time');
+let x = 0;
+let y = 0;
+
+document.addEventListener('keydown', (event) => {
+  const key = event.key.toLowerCase();
+  if (key === 'arrowup') {
+    y -= 5;
+  } else if (key === 'arrowdown') {
+    y += 5;
+  } else if (key === 'arrowleft') {
+    x -= 5;
+  } else if (key === 'arrowright') {
+    x += 5;
+  }
+  timeElement.style.transform = `translate(${x}px, ${y}px)`;
+});
+This code adds a keydown event listener to the document object, which listens for arrow keys pressed on the keyboard. When an arrow key is pressed, the code updates the x and y variables by a fixed amount (in this case, 5 pixels) depending on the direction of the arrow key. Then, the code applies a CSS transform to the time element using the transform property, with the translate() function to move the element by the new x and y values.
+
+Note that the time element must have a position property set to something other than static (such as relative or absolute) in order for the transform property to work. You can add the following CSS to achieve this:
+
+arduino
+Copy code
+#time {
+  position: relative;
+}
+This CSS sets the position property of the time element to relative, so that it can be positioned relative to its original position using the translate() function.
