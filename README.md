@@ -1,4 +1,5 @@
 Autor: Merilyn Litvinov
+Link lehele: http://www.tlu.ee/~merilynl/clock_wip/clock_wip.html
 
 Rakenduse pilt päevarežiimil:
 ![image](https://user-images.githubusercontent.com/114921922/229124623-bb7a6956-4ab8-4c7b-837a-9eafea0eb6b3.png)
