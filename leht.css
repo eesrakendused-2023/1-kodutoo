@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+  }
+  
+  body {
+    display: flex;
+    align-items: center;
+    text-shadow: 0 0 10px rgb(161, 38, 0);
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    
+  }
+
+  body {
+    background-image: url("tempel.jpg");
+    background-size: cover;
+  }
+  
+  
+  .clock {
+    width: 70%;
+    text-shadow: 0 0 10px rgb(161, 38, 0);
+    max-width: 500px;
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0);
+    border-radius: 0px;
+    padding: 20px;
+    border: none; /* Remove border */
+  }
+  
+  
+  .time {
+    font-size: 60px;
+    text-align: center;
+  }
+  
+  .separator {
+    font-size: 40px;
+    vertical-align: middle;
+  }
+  
+  .date {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .day, .month, .year {
+    display: inline-block;
+    margin: 0 5px;
+  }
+  
+  .day::after, .month::after {
+    content: "/";
+  }
+
+  audio {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: transparent;
+  }
+
+  .name {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color:#ca763d
+  }
+
+  
+  button {
+    background: none;
+    border: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    color: #ca763d;
+    text-shadow: 0 0 10px #37327c;
+    }
+    
+  }
+  
+
+  
+ 
+  
+  
