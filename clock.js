@@ -15,7 +15,6 @@ document.getElementById('shorter').addEventListener("click", textSmaller);
 
 window.addEventListener('keydown', textSize);
 
-
 function textBigger(){
     timeFontSize = timeFontSize + 0.1;
     document.getElementById('time').style.fontSize = timeFontSize + "em";
@@ -106,7 +105,6 @@ fontFamilySelect.addEventListener("change", () => {
 
 const musicPlayer = document.getElementById("music-player");
 const playPauseButton = document.getElementById("play-pause-button");
-const seekBar = document.getElementById("seek-bar");
 
 function togglePlayPause() {
   if (musicPlayer.paused) {
@@ -120,13 +118,7 @@ function togglePlayPause() {
   }
 }
 
-function updateSeekBar() {
-  const percentPlayed = (musicPlayer.currentTime / musicPlayer.duration) * 100;
-  seekBar.value = percentPlayed;
-}
-
 playPauseButton.addEventListener("click", togglePlayPause);
-musicPlayer.addEventListener("timeupdate", updateSeekBar);
 
 upDateClock();
 upDateDate();

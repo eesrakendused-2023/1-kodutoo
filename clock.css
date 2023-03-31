@@ -26,11 +26,9 @@ body {
     border-radius: 20px;
     padding: 10px;
     display: absolute;
-    /*align-items: center;
-    justify-content: center;*/
     font-size: 1.5em;
-    margin-top: 5%; /* lisasime margin-topi */
-    text-align: center; /* lisasime teksti keskpaigutuse */
+    margin-top: 5%; 
+    text-align: center; 
     color: white;
     background-color: #000;
     position: absolute;
@@ -46,11 +44,9 @@ body {
     border-radius: 20px;
     padding: 10px;
     display: absolute;
-    /*align-items: center;
-    justify-content: center;*/
     font-size: 1em;
     margin-top: 5%; 
-    text-align: center; /* lisasime teksti keskpaigutuse */
+    text-align: center; 
     color: white;
     background-color: #000;
     position: absolute;
@@ -66,11 +62,9 @@ body {
     border-radius: 20px;
     padding: 10px;
     display: absolute;
-    /*align-items: center;
-    justify-content: center;*/
     font-size: 0.5em;
     margin-top: 5%; 
-    text-align: center; /* lisasime teksti keskpaigutuse */
+    text-align: center; 
     color: white;
     background-color: #000;
     position: absolute;
@@ -94,11 +88,9 @@ body {
     border-radius: 20px;
     padding: 10px;
     display: absolute;
-    /*align-items: center;
-    justify-content: center;*/
     font-size: 0.5em;
     margin-top: 5%; 
-    text-align: center; /* lisasime teksti keskpaigutuse */
+    text-align: center;
     color: white;
     background-color: #000;
     position: absolute;
@@ -115,11 +107,9 @@ body {
     border-radius: 20px;
     padding: 10px;
     display: absolute;
-    /*align-items: center;
-    justify-content: center;*/
     font-size: 0.5em;
     margin-top: 5%; 
-    text-align: center; /* lisasime teksti keskpaigutuse */
+    text-align: center;
     color: white;
     background-color: #000;
     position: absolute;
@@ -168,8 +158,8 @@ body {
     align-items: center;
   }
   
-  .play-button {
-    border: 3px solid black;
+.play-button {
+    border: 3px solid white;
     border-radius: 50%;
     display: absolute;
     /*align-items: center;
@@ -185,14 +175,12 @@ body {
     background-position: center;
     background-repeat: no-repeat;
 
-  }
-  
-  .pause-button {
-    border: 3px solid black;
+}
+
+.pause-button {
+    border: 3px solid white;
     border-radius: 50%;
     display: absolute;
-    /*align-items: center;
-    justify-content: center;*/
     margin-top: 5%; 
     position: absolute;
     top: 10%;
@@ -203,5 +191,5 @@ body {
     background-size: 60px;
     background-position: center;
     background-repeat: no-repeat;
-  }
+}
   
