@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ChatGPT clock</title>
+    <link rel="stylesheet" href="clock_wip.css">
+  </head>
+  <body>
+    <div id="background_area" class="background_area">
+      <!-- audio div with options -->
+      <div id="audioDiv">
+        <audio controls id="audioPlayer">
+          <source src="piano_music.mp3"  type="audio/mp3">
+        </audio> 
+        <br>
+        <label for="hideAudio">Hide audio:</label>
+        <input type="checkbox" id="hideAudio">
+      </div>
+
+      <!-- options for changing the clock -->
+      <div id="options">
+        <div id="settings">
+          <p>Clock author: Merilyn Litvinov</p>
+          <br>
+          <label for="font-size">Font Size:</label>
+          <input type="range" id="font-size" min="60" max="140" step="10" value="100">
+          <br>
+          <label for="opacity">Opacity:</label>
+          <input type="range" id="opacity" min="0.5" max="1" step="0.1" value="0.8">
+          <br>
+          <label for="timezone">Timezone:</label>
+          <select id="timezone">
+            <option value="local">Local Time</option>
+            <option value="utc">UTC</option>
+            <option value="est">Eastern Standard Time</option>
+            <option value="pst">Pacific Standard Time</option>
+          </select>
+          <br>
+          <label for="font-family">Font style:</label>
+          <select id="font-family">
+            <option value="Arial, sans-serif">Arial</option>
+            <option value="Times New Roman, serif">Times New Roman</option>
+            <option value="Verdana, sans-serif">Verdana</option>
+            <option value="Courier New, monospace" selected>Courier New</option>
+          </select>
+          <br>
+          <label for="dark-mode">Dark Mode:</label>
+          <input type="checkbox" id="dark-mode">
+          <br>
+          <label for="border">Border:</label>
+          <input type="checkbox" id="border" checked>
+        </div>
+        <br>
+        <label for="hideSettings">Hide settings:</label>
+        <input type="checkbox" id="hideSettings">
+      </div>
+      <br>
+      <br>
+
+        <!-- clock -->
+        <div id="container" class="container">
+          <div id="clock"></div>
+          <div id="date"></div>
+          <div id="day"></div>
+      </div>
+  </div>
+    <script src="clock_wip.js"></script>
+  </body>
+</html>
