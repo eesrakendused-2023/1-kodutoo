@@ -8,4 +8,4 @@ Lisaks sellele on kellale vajutades Shanghai kellaeg olemas. Tasutale vajutades 
 Vestlus:https://docs.google.com/document/d/1-u2RKaI0AsKbEPGr7nVTYSBKIN0vhPSPEYYq-Pezc0c/edit?usp=sharing
 
 Screenshot:
-![image](https://github.com/makuska/1-kodutoo/tree/main/koduto%CC%88o%CC%881/Screenshot_pilt)
+![image](https://github.com/makuska/1-kodutoo/blob/main/koduto%CC%88o%CC%881/Screenshot_pilt.png)
