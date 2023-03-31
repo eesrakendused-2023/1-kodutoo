@@ -9,6 +9,8 @@ let backgrounds = [
   ];
   let currentBackgroundIndex = 0;
 
+var audio = document.getElementById("bg-music");
+
 function showTime() {
     var date = new Date();
     var hours = date.getHours();
@@ -33,19 +35,6 @@ function showTime() {
     var dayOfMonth = date.getDate();
     var fullDate = day + ", " + month + " " + dayOfMonth + ", " + year;
     clockElement.innerText = time;
-    var audio = document.getElementById("bg-music");
-    audio.volume = 1;
-    document.addEventListener("visibilitychange", function() {
-        if (document.hidden) {
-          audio.pause();
-        } else {
-          audio.play();
-        }
-      });
-      window.addEventListener("load", function() {
-        audio.play();
-      });
-
     document.getElementById('bigger').addEventListener("click", function(){
         timeFontSize = timeFontSize + 0.01;
         document.getElementById('clock').style.fontSize = timeFontSize + "em";
@@ -78,7 +67,13 @@ function showTime() {
   function toggleClockFormat() {
     is24HourFormat = !is24HourFormat;
   }
-  
+  function playAudio() {
+    audio.play();
+  }
+
+  function pauseAudio() {
+    audio.pause();
+  }
 
  
 

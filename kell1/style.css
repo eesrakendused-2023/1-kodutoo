@@ -63,5 +63,16 @@ body {
   text-align: center;
   margin-top: 2%;
   cursor: pointer;
-
+}
+#music button{
+align-items: end;
+display: inline-block;
+margin: 10px;
+padding: 10px;
+background-color: #4CAF50;
+color: white;
+font-weight: bold;
+border: none;
+border-radius: 5px;
+cursor: pointer;
 }
