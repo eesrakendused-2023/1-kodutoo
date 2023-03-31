@@ -1,0 +1,51 @@
+body {
+  background-color: #f2f2f2;
+  background-image: radial-gradient(#ddd 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.button-container{
+  display: flex;
+  justify-content: left;
+  align-items: left;
+}
+
+.text-container {
+  text-align: center;
+}
+
+h1, h2 {
+  font-size: 3rem;
+}
+
+.button-container {
+  margin-left: 1rem;
+}
+
+button {
+  font-size: 2rem;
+  padding: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  background-color: #ffffff76;
+}
+
+button:hover {
+  background-color: #dad5d56c;
+}
+
+button:active {
+  transform: scale(0.9);
+}
+
+.container {
+  position: relative;
+  font-size: 10px;
+}
