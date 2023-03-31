@@ -1,6 +1,6 @@
 # 1-kodutoo
 
-##Autor: Katriin Liselle Eenmaa
+Autor: Katriin Liselle Eenmaa
 
 Autori nimi ja viide rakenduse repositooriumile on lehe jaluses.
 
