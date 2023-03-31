@@ -1,5 +1,5 @@
 let fontSize = 3;
-
+//Update clock every second
 function updateTime() {
   const now = new Date();
   const hours = now.getHours().toString().padStart(2, '0');
@@ -19,6 +19,10 @@ function updateTime() {
   document.getElementById('time').style.fontSize = `${fontSize}rem`;
   document.getElementById('date').style.fontSize = `${fontSize}rem`;
 }
+updateTime();
+setInterval(updateTime, 1000);
+
+//Text random color
 function randomColor() {
   const letters = '0123456789ABCDEF';
   let color = '#';
@@ -27,10 +31,13 @@ function randomColor() {
   }
   return color;
 }
+//Background random color
 function changeBackgroundColor() {
   let color = `hsl(${Math.floor(Math.random() * 360)}, 100%, 80%)`;
   document.body.style.backgroundColor = color;
 }
+
+//Toggle buttons
 function toggleButtons() {
   const buttonContainer = document.querySelector('.button-container');
   console.log("siiin")
@@ -41,25 +48,49 @@ function toggleButtons() {
   }
 }
 
-updateTime();
-setInterval(updateTime, 1000);
 
+//Increase text size
 document.getElementById('increase-btn').addEventListener('click', () => {
   fontSize += 0.5;
   updateTime();
 });
-
+//Decrease text size
 document.getElementById('decrease-btn').addEventListener('click', () => {
   fontSize -= 0.5;
   updateTime();
 });
+
+//Callout random color
 document.getElementById('color-btn').addEventListener('click', () => {
   document.getElementById('time').style.color = randomColor();
   document.getElementById('date').style.color = randomColor();
 });
+
+//Callout random background color
 document.getElementById('bg-color').addEventListener('click', () => {
   changeBackgroundColor();
 });
+
+//Callout toggle button 
 document.getElementById('myCheck').addEventListener('click', () => {
   toggleButtons();
+});
+
+//Move around with arrow keys
+const timeElement = document.getElementById('container');
+let x = 0;
+let y = 0;
+
+document.addEventListener('keydown', (event) => {
+  const key = event.key.toLowerCase();
+  if (key === 'arrowup') {
+    y -= 5;
+  } else if (key === 'arrowdown') {
+    y += 5;
+  } else if (key === 'arrowleft') {
+    x -= 5;
+  } else if (key === 'arrowright') {
+    x += 5;
+  }
+  timeElement.style.transform = `translate(${x}px, ${y}px)`;
 });

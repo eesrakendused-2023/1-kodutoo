@@ -10,6 +10,11 @@ body {
   align-items: center;
   height: 100vh;
 }
+.button-container{
+  display: flex;
+  justify-content: left;
+  align-items: left;
+}
 
 .text-container {
   text-align: center;
@@ -42,4 +47,8 @@ button:active {
 }
 #color-btn{
   font-size: 5vh;
+}
+
+.container {
+  position: relative;
 }
