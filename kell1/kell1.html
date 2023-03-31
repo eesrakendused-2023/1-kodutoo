@@ -11,6 +11,10 @@
     <audio id="bg-music" src="linnulaul.mp3" autoplay loop></audio>
   </head>
   <body onload="showTime()">
+    <div id="music">
+      <button onclick="playAudio()">Play</button>
+      <button onclick="pauseAudio()">Pause</button>
+    </div>
     <div id="clock" onclick="changeColor()"></div>
     <div id="date" onclick="toggleClockFormat()"></div>
     <div id="author">Author: Jan Henrik Levertand</div>
