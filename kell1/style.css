@@ -1,58 +1,67 @@
 body {
-    background-image: url("loodus.jpg");
-    background-size: cover;
-    background-position: center;
-  }
-  #clock {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 6em;
-    font-weight: bold;
-    color: #ffffff;
-    text-shadow: 2px 2px #5c5c5c;
-    text-align: center;
-    margin-top: 25%;
-    cursor: pointer;
-  }
-  #date {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2em;
-    color: #ffffff;
-    text-shadow: 2px 2px #5c5c5c;
-    text-align: center;
-    margin-top: 2%;
-    cursor: pointer;
-  }
-  #author{
-    font-family: 'Montserrat', sans-serif;;
-    font-weight: bold;
-    font-size: 1.5em;
-    color: whitesmoke;
-    text-shadow: #5c5c5c;
-  }
-  .red {
-    color: purple;
-  }
-  #controls button {
-    display: inline-block;
-    margin: 10px;
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  #nextbtn button{
-    align-items: end;
-    display: inline-block;
-    margin: 10px;
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
+  background-image: url("loodus.jpg");
+  background-size: cover;
+  background-position: center;
+}
+#clock {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 6em;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 2px 2px #5c5c5c;
+  text-align: center;
+  margin-top: 25%;
+  cursor: pointer;
+}
+#date {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2em;
+  color: #ffffff;
+  text-shadow: 2px 2px #5c5c5c;
+  text-align: center;
+  margin-top: 2%;
+  cursor: pointer;
+}
+#author{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: whitesmoke;
+  text-shadow: #5c5c5c;
+}
+.red {
+  color: purple;
+}
+#controls button {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#nextbtn button{
+  align-items: end;
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#repo{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2em;
+  color: #ffffff;
+  text-shadow: 2px 2px #ffffff;
+  text-align: center;
+  margin-top: 2%;
+  cursor: pointer;
+
+}
