@@ -7,3 +7,4 @@ Kella funktsionaalsused:
     Vajutades kellale, muudab see asukohta.
     Vajutades Space nuppu, "hüppab" kell.
     Vastavalt kellaajale on kuvatud "AM" või "PM".
+ ![image](https://user-images.githubusercontent.com/114922035/229165882-d6800c09-26f2-4de9-a99e-d77114e6a6ad.png)
