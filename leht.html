@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8">
     <title>Elektrooniline kell</title>
-    <link rel="stylesheet" href="leht.css">
     <link rel="stylesheet" type="text/css" href="leht.css">
   </head>
   <body>
@@ -17,9 +16,6 @@
         <span class="minutes"></span>
         <span class="separator">:</span>
         <span class="seconds"></span>
-      </div>
-      <div class="source">
-        <a href="https://www.example.com" target="_blank">Source</a>
       </div>
       <div class="date">
         <span class="day"></span>
@@ -47,6 +43,9 @@
       <source src="laul.mp3" type="audio/mpeg">
       Your browser does not support the audio element.
     </audio>
+    <div class="source">
+      <a href="https://github.com/Rsilt/1-kodutoo" target="_blank">Source</a>
+    </div>
     <script src="leht.js"></script>
     <script>
       function updateTime() {
@@ -58,31 +57,11 @@
       
         document.querySelector(".hours").textContent = hours;
         document.querySelector(".minutes").textContent = minutes;
-        document.querySelector(".seconds").textContent = seconds;
-      
-        const day = now.getDate().toString().padStart(2, "0");
-        const dayOfWeek = now.toLocaleString('en-us', { weekday: 'long' });
-        const month = (now.getMonth() + 1).toString().padStart(2, "0");
-        const year = now.getFullYear();
-      
-        document.querySelector(".day").textContent = day;
-        document.querySelector(".dayOfWeek").textContent = dayOfWeek;
-        document.querySelector(".month").textContent = month;
-        document.querySelector(".year").textContent = year;
-      }
-      function setClockSize(fontSize) {
-        var clock = document.querySelector(".clock");
-        clock.style.fontSize = fontSize + "px";
-      }
-      function changeBackground() {
-        document.body.style.backgroundImage = "url('pilt.jpg')";
-      }
-      function changeColor(color) {
-        var clock = document.querySelector(".clock");
-        clock.style.color = color;
+        document.querySelector(".seconds").textContent = seconds; // This line was missing in the original code.
       }
       
       setInterval(updateTime, 1000);
+      updateTime();
     </script>
-    </html>
- 
+  </body>
+</html>
