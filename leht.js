@@ -1,3 +1,4 @@
+
 function updateTime() {
   const now = new Date();
 
@@ -20,23 +21,19 @@ function updateTime() {
 
 function setClockSize(fontSize) {
   var clock = document.querySelector(".clock");
-  clock.style.fontSize = fontSize + 0.01;
-  document.querySelector(".time").style.fontSize = fontSize + 0.01;
+  clock.style.fontSize = fontSize + "px";
+  document.querySelector(".time").style.fontSize = fontSize + "px";
 }
 
 function changeBackground() {
-  var body = document.getElementsByTagName("body")[0];
-  if (body.style.backgroundImage === 'url("tempel.jpg")') {
-    body.style.backgroundImage = 'url("pilt.jpg")';
-  } else {
-    body.style.backgroundImage = 'url("tempel.jpg")';
-  }
+  document.body.style.backgroundImage = 'url(pilt.jpg)';
+}
   function changeColor(color) {
     var clock = document.querySelector(".clock");
     clock.style.color = color;
+  }
+
+
   
-}
-
-
-
-setInterval(updateTime, 1000);
+  setInterval(updateTime, 1000);
+  
