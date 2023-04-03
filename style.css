@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+    transition: background-color 0.5s;
+  }
+  
+  #clock-container {
+    font-family: Arial, sans-serif;
+    position: relative;
+    text-align: center;
+  }
+  
+  #lang-button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  #time {
+    font-size: 5vw;
+    font-weight: bold;
+  }
+  
+  #date {
+    font-size: 2vw;
+  }
+  
+  #time, #date {
+    cursor: pointer;
+  }
+  p {
+    color: red;
+  }
