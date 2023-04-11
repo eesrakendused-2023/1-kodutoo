@@ -1,25 +1,44 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="index.css">
-    <script src="clock.js" defer></script>
-    <title>Web Clock</title>
-  </head>
-  <body>
-    <div id="clock-section">
-      <!-- Clock elements will be added here -->
+
+<head>
+  <link rel="stylesheet" href="index.css">
+  <script src="clock.js" defer></script>
+  <script src="timer.js" defer></script>
+  <title>Web Clock</title>
+</head>
+
+<body>
+  <div id="clock-section">
+    <!-- Clock elements will be added here -->
+  </div>
+  <div id="date-section">
+    <!-- Date elements will be added here -->
+  </div>
+  <div id="button-section">
+    <button id="format-btn">Format</button>
+    <button id="nightmode-btn">Nightmode</button>
+    <button id="bigger-btn">Bigger</button>
+    <button id="smaller-btn">Smaller</button>
+  </div>
+  <div id="timer-section">
+    <label for="time-inputs">Set Timer (hours-minutes-seconds):</label>
+    <div id="time-inputs">
+      <input type="number" id="hours-input" min="0" max="23" placeholder="hh">
+      <input type="number" id="minutes-input" min="0" max="59" placeholder="mm">
+      <input type="number" id="seconds-input" min="0" max="59" placeholder="ss">
     </div>
-    <div id="date-section">
-      <!-- Date elements will be added here -->
+    <div>
+      <button id="start-timer-btn">Start Timer</button>
+      <button id="stop-timer-btn">Stop Timer</button>
     </div>
-    <div id="button-section">
-      <button id="format-btn">Format</button>
-      <button id="nightmode-btn">Nightmode</button>
-      <button id="bigger-btn">Bigger</button>
-      <button id="smaller-btn">Smaller</button>
-    </div>
-    <div id="empty-section">
-      <!-- This section is empty for now -->
-    </div>
-  </body>
+    <div id="timer-output"></div>
+  </div>
+  <footer>
+    <p>Created by Daniel Janson and ChatGPT</p>
+    <a href="https://github.com/DanielAugustJanson">Website repository</a>
+  </footer>
+
+</body>
+
 </html>

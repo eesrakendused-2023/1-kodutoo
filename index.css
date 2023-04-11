@@ -13,6 +13,10 @@ body {
   margin-bottom: 1rem;
 }
 
+label{
+  font-size: 1.5rem;
+}
+
 #date-section {
   font-size: 2rem;
   margin-bottom: 1rem;
@@ -27,6 +31,19 @@ body {
 button {
   margin: 0 0.5rem;
   font-size: 1.5rem;
+  background: none;
+  border: 2px solid #333;
+  border-radius: 20px;
+  color: #333;
+  cursor: pointer;
+  padding: 10px 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #0077B6;
+  border-color: #0077B6;
+  color: #fff;
 }
 
 #clock-section {
@@ -36,3 +53,160 @@ button {
 #date-section {
   font-size: calc(20px * var(--size));
 }
+
+#timer-section {
+  text-align: center;
+  font-size: 3em;
+  margin: 2em 0;
+}
+
+input[type="number"] {
+  width: 2ch;
+  text-align: center;
+}
+
+#timer-inputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1em 0;
+}
+
+#timer-inputs input {
+  margin: 0 0.5em;
+}
+
+#timer-btns {
+  display: flex;
+  justify-content: center;
+  margin: 1em 0;
+}
+
+#timer-btns button {
+  margin: 0 0.5em;
+  padding: 0.5em;
+}
+
+#start-timer-btn {
+  background-color: rgba(41, 209, 41, 0.658);
+  color: white;
+  border: none;
+}
+
+#stop-timer-btn {
+  background-color: rgba(212, 39, 39, 0.726);
+  color: white;
+  border: none;
+}
+
+.nightmode {
+  background-color: #2f3640;
+  color: #fff;
+}
+
+.nightmode #timer-output {
+  color: #fff;
+}
+
+.nightmode #timer-output .alert {
+  background-color: #fff;
+  color: #2f3640;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+footer a {
+  color: black;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #0077cc;
+  transition: color 0.3s ease;
+}
+
+.nightmode button {
+  background-color: transparent;
+  border-color: #0077B6;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+
+button:hover{
+  background-color: #0077B6;
+  border-color: #0077B6;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.nightmode button:hover {
+  background-color: #fff;
+  color: #2f3640;
+  transition: all 0.3s ease-in-out;
+}
+
+#time-inputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1em 0;
+}
+
+#time-inputs input {
+  margin: 0 0.5em;
+  background: none;
+  border: 2px solid #333;
+  border-radius: 20px;
+  color: #333;
+  font-size: 16px;
+  padding: 10px 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+#time-inputs input:hover {
+  background-color: #0077B6;
+  border-color: #0077B6;
+  color: #fff;
+}
+
+#time-inputs input:focus {
+  outline: none;
+  box-shadow: 0 0 2px 2px #0077B6;
+}
+
+.nightmode #time-inputs input {
+  border-color: #fff;
+  color: #fff;
+}
+
+.nightmode #time-inputs input:hover {
+  background-color: #0077B6;
+  border-color: #0077B6;
+  color: #fff;
+}
+
+.nightmode #time-inputs input:focus {
+  box-shadow: 0 0 2px 2px #fff;
+}
+
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+

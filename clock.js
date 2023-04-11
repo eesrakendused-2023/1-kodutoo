@@ -96,6 +96,20 @@ function updateTimeAndDate() {
   clockDiv.style.fontSize = `${time.size}rem`;
 }
 
+function nightMode() {
+  const body = document.body;
+  const elements = document.querySelectorAll('body, button, input, label, footer, a');
+  
+  if (!time.nightMode) {
+    body.classList.add('nightmode');
+    elements.forEach(element => element.classList.add('nightmode'));
+    time.nightMode = true;
+  } else {
+    body.classList.remove('nightmode');
+    elements.forEach(element => element.classList.remove('nightmode'));
+    time.nightMode = false;
+  }
+}
 
 setInterval(() => {
   time.date = new Date();
@@ -109,9 +123,9 @@ formatBtn.addEventListener('click', () => {
 });
 
 // Event listener for nightmode button
-nightModeBtn.addEventListener('click', () => {
-  time.toggleNightMode();
-  document.body.classList.toggle('night-mode');
+nightModeBtn.addEventListener('click', function(){
+  nightMode()
+  console.log("Nightmode pressed")
 });
 
 biggerButton.addEventListener('click', function() {
@@ -121,3 +135,5 @@ biggerButton.addEventListener('click', function() {
 smallerButton.addEventListener('click', function() {
   time.decreaseSize();
 });
+
+
