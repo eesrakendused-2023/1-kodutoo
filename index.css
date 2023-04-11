@@ -8,6 +8,10 @@ body {
   height: 100vh;
 }
 
+*{
+  font-family: 'Outfit', sans-serif;
+}
+
 #clock-section {
   font-size: 10rem;
   margin-bottom: 1rem;
@@ -30,7 +34,7 @@ label{
 
 button {
   margin: 0 0.5rem;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   background: none;
   border: 2px solid #333;
   border-radius: 20px;
