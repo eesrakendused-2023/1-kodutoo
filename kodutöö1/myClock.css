@@ -1,0 +1,101 @@
+html, body {
+	height: 100%;
+}
+
+#tallinn{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content:center;
+  height: 100%;
+}
+#newyork{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: left;
+  height: 100%;
+}
+#tokyo{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: right;
+  height: 100%;
+}
+
+.clock {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+}
+
+.location {
+  font-size: 2em;
+}
+
+.time {
+	font-size: 4em;
+	font-weight: bold;
+	margin-bottom: 10px;
+	width: 200px;
+	height: 120px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.date {
+	font-size: 2em;
+}
+
+.btn{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.hidden{
+  display: none;
+}
+
+/*https://getcssscan.com/css-buttons-examples */
+.button-89 {
+  --b: 3px;   /* border thickness */
+  --s: .45em; /* size of the corner */
+  --color: #373B44;
+  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: .6em;
+  font-size: 16px;
+  border: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-89:hover,
+.button-89:focus-visible{
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: .05em;
+}
+
+.button-89:active {
+  background: var(--color);
+  color: #fff;
+}
+
+
