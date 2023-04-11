@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="kell1.js" defer></script>
+    <title>Wildlife Clock</title>
+    <audio id="bg-music" src="linnulaul.mp3" autoplay loop></audio>
+  </head>
+  <body onload="showTime()">
+    <div id="music">
+      <button onclick="playAudio()">Play</button>
+      <button onclick="pauseAudio()">Pause</button>
+    </div>
+    <div id="clock" onclick="changeColor()"></div>
+    <div id="date" onclick="toggleClockFormat()"></div>
+    <div id="author">Author: Jan Henrik Levertand</div>
+    <div id="controls">
+      <button id="bigger">+</button>
+      <button id="smaller">-</button>
+    </div>
+    <div id="nextbtn">
+      <button id="next" onclick="changeBackground()">Change backround</button>
+    </div>
+    <div id="repo"><a href="https://github.com/janlever/1-kodutoo">Click here to check out my repositorium in github</a></div>
+  </body>
+</html>
