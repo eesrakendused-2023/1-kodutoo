@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="kodukell.css">
+    <script src="kodukell.js" defer></script>
+    <title>KODUKELL</title>
+</head>
+<body>
+    <div class="clock">
+        <div class = "hours">Tunnid</div>
+        <div class = "minutes">Minutid</div>
+        <div class = "seconds">Sekundid</div>
+    </div>
+    <div class="date-container">
+        Kuupäev
+    </div>
+
+    <div class="day-container">
+        Päev
+    </div>
+    <div class="author">
+        Autor: Anu Sarapuu
+    </div>
+    <div class="repo">
+        <a href="https://github.com/anu844/1-kodutoo.git"> REPOSITOORIUM</a>
+    </div>
+
+    <button id="resize-button">Muuda kella suurust<br>(väiksemaks/suuremaks)</button>
+    <button id="color-button">Muuda kella värvi<br>(mustaks)</button>
+    <button id="format-button">Muuda kella formaati<br>üheks sekundiks(12h)</button>
+    <button id="author-button">Eemalda nime eest "Autor:"</button>
+    <button id="backColor-button">Muuda taustavärvi<br>(juhuslik värv)</button>
+    <button id="date-button">Kuva kuupäev numbritega</button>
+    
+    <script>
+        updateClock();
+    </script>
+    <style>
+        body{
+            background-color: darksalmon;
+        }
+    </style>
+</body>
+</html>
