@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Elektrooniline kell</title>
+    <link rel="stylesheet" type="text/css" href="leht.css">
+  </head>
+  <body>
+    <div class="name">
+      Roland Silt
+    </div>
+    <div class="clock">
+      <div class="time">
+        <span class="hours"></span>
+        <span class="separator">:</span>
+        <span class="minutes"></span>
+        <span class="separator">:</span>
+        <span class="seconds"></span>
+      </div>
+      <div class="date">
+        <span class="day"></span>
+        <span class="dayOfWeek"></span>
+        <span class="month"></span>
+        <span class="year"></span>
+      </div>
+      <button onclick="setClockSize(40)">+</button>
+      <button onclick="setClockSize(36)">-</button>
+      <button onclick="document.getElementById('myAudio').play()">Play Music</button>
+      <button onclick="document.getElementById('myAudio').pause()">Pause</button>
+      <button onclick="document.getElementById('myAudio').currentTime = 0">Repeat</button>
+      <button onclick="changeColor('red')">Red</button>
+      <button onclick="changeColor('blue')">Blue</button>
+      <button onclick="changeColor('green')">Green</button>
+      <button onclick="changeColor('yellow')">Yellow</button>
+      <button onclick="changeColor('orange')">Orange</button>
+      <button onclick="document.getElementById('myAudio').volume -= 0.1" style="background:none;">Turn the volume down</button>
+      <button onclick="document.getElementById('myAudio').volume += 0.1" style="background:none;">Turn the volume up</button>
+      <div style="text-align: center;">
+        <button onclick="changeBackground()">Change background</button>
+      </div>
+    </div>
+    <audio id="myAudio">
+      <source src="laul.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <div class="source">
+      <a href="https://github.com/Rsilt/1-kodutoo" target="_blank">Source</a>
+    </div>
+    <script src="leht.js"></script>
+    <script>
+      function updateTime() {
+        const now = new Date();
+      
+        const hours = now.getHours().toString().padStart(2, "0");
+        const minutes = now.getMinutes().toString().padStart(2, "0");
+        const seconds = now.getSeconds().toString().padStart(2, "0");
+      
+        document.querySelector(".hours").textContent = hours;
+        document.querySelector(".minutes").textContent = minutes;
+        document.querySelector(".seconds").textContent = seconds; // This line was missing in the original code.
+      }
+      
+      setInterval(updateTime, 1000);
+      updateTime();
+    </script>
+  </body>
+</html>
