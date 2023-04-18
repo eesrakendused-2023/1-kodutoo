@@ -1,0 +1,113 @@
+/* Set font and background color for the entire page */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fafafa;
+}
+
+/* Styling for the clock display */
+#time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3em; /* Set initial font size */
+}
+
+#hours {
+  font-weight: bold;
+}
+
+/* Styling for the container that holds the clock and date displays */
+#container {
+  display: flex;
+  flex-direction: column;
+  height: 70vh; /* Set height of container */
+  background-color: #fff; /* Set background color of container */
+  align-items: center;
+  justify-content: space-around;
+  padding: 30px; /* Add some padding around the container */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add a box shadow for depth */
+}
+
+/* Styling for the date display */
+#date {
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+}
+
+#day {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+/* Styling for the controls */
+#controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: #333; /* Set background color of controls */
+  height: 60px;
+}
+
+#controls button {
+  height: 26px;
+  width: 26px;
+  margin: 0px 10px; /* Add some margin between the buttons */
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #fff; /* Set font color of buttons */
+  background-color: #555; /* Set background color of buttons */
+  border: none;
+  border-radius: 50%; /* Make the buttons circular */
+  cursor: pointer;
+  transition: all 0.2s ease-in-out; /* Add a transition effect when hovering over buttons */
+}
+
+#controls button:hover {
+  background-color: #777; /* Darken background color when hovering over buttons */
+}
+
+#bigger {
+  font-size: 1.5em;
+}
+
+#smaller {
+  font-size: 1.8em;
+}
+
+/* Styling for the stopwatch display */
+#stopwatch-display {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+/* Styling for the stopwatch buttons */
+#start, #stop, #reset {
+  font-size: 1em;
+  margin-right: 10px;
+}
+
+#countdown-display {
+  font-size: 3em;
+  text-align: center;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  align-items: center;
+  height: 50px;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+#countdown-time {
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+#countdown-message {
+  margin-top: 10px;
+  margin-left: 30px;
+  width: 200px;
+  height: 100px;
+}
