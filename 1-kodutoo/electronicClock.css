@@ -1,0 +1,56 @@
+#time{
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1000%; 
+    background-color: rgb(248, 31, 248);
+}
+
+#container{
+    display:flex;
+    flex-direction: column;
+    width:200vh;
+    height:100vh;
+    background-color: rgb(233, 152, 233);
+    align-items:center;
+    justify-content:space-around;
+    
+
+}
+
+#intro{
+    align-items:flex-start;
+    justify-content: center;
+    display: grid;
+}
+
+#buttonsTime{
+    display:grid;
+}
+
+#button{
+    color:rgb(14, 13, 13);
+}
+
+#author{
+    font-size: 200%;
+}
+
+#repo{
+    font-size: 200%;
+    justify-self: center;
+}
+
+
+#day{
+    font-size: 200%;
+    background-color: blueviolet;
+}
+
+#date{
+    font-size: 200%;
+    background-color: pink;
+
+}
+
