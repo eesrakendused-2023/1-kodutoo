@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elektrooriline kell</title>
+    <script>
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('player', {
+                height: '360',
+                width: '640',
+                videoId: 'M7lc1UVf-VE',
+                events: {
+                    'onReady': onPlayerReady,
+                    'onStateChange': onPlayerStateChange
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+    <div id="controls">
+        <button id="shorter">-</button>
+        <button id="bigger">+</button>
+    </div>
+    <link rel="stylesheet" href="clock.css">
+    <script src="clock.js" defer></script>
+    <div id="container" class="bg-image">
+        <div id="time">
+            <div id="hours">Tunnid</div>
+            <div id="minutes">Minutid</div>
+            <div id="seconds">Sekundid</div>
+        </div>
+        <div id="date">
+            Kuupäev
+        </div>
+        <div id="day">Päev</div>
+        <div id="info"><p>Merette Arula repositoorium: https://github.com/merettearula/1-kodutoo</p></div>
+        
+    </div>
+    <div id="font">
+        <label for="font-family"></label>
+            <select id="font-family">
+                <option value="Segoe UI">Segoe UI</option>
+                <option value="Tahoma">Tahoma</option>
+                <option value="Geneva">Geneva</option>
+                <option value="Verdana">Verdana</option>
+                <option value="Arial, Helvetica, sans-serif">Arial, Helvetica, sans-serif</option>
+                <option value="'Franklin Gothic Medium'">Franklin Gothic Medium</option>
+                <option value="'Arial Narrow', Arial, sans-serif">Arial Narrow</option>
+            </select>
+    </div>
+
+    <div>
+        <select id="language-select">
+          <option value="et">Eesti</option>
+          <option value="en">Inglise</option>
+        </select>
+    </div>
+
+    <audio id="music-player" src="muusika.mp3"></audio>
+
+    <div id="player-controls">
+      <button id="play-pause-button" class="play-button"></button>
+    </div>
+    
+</body>
+</html>

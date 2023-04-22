@@ -1,0 +1,195 @@
+body {
+    opacity: 0.9;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+}
+
+#time{
+    border-radius: 20%; 
+    border: 5px solid #fff;
+    width: 450px;
+    height: 450px;
+    font-size: 3em;
+    color: white;   
+    background-color: #000;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    top: 10%;
+}
+
+#date {
+    border: 5px solid aliceblue;
+    border-radius: 20px;
+    padding: 10px;
+    display: absolute;
+    font-size: 1.5em;
+    margin-top: 5%; 
+    text-align: center; 
+    color: white;
+    background-color: #000;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    top: 50%;
+  }
+
+#day {
+    border: 5px solid aliceblue;
+    border-radius: 20px;
+    padding: 10px;
+    display: absolute;
+    font-size: 1em;
+    margin-top: 5%; 
+    text-align: center; 
+    color: white;
+    background-color: #000;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    top: 60%;
+}
+
+#info{
+    border: 2px solid aliceblue;
+    border-radius: 20px;
+    padding: 10px;
+    display: absolute;
+    font-size: 0.5em;
+    margin-top: 5%; 
+    text-align: center; 
+    color: white;
+    background-color: #000;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    top: 80%
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+}
+
+#font-family{
+    border: 2px solid aliceblue;
+    border-radius: 20px;
+    padding: 10px;
+    display: absolute;
+    font-size: 0.5em;
+    margin-top: 5%; 
+    text-align: center;
+    color: white;
+    background-color: #000;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    top: 80%;
+    left: 5%;
+}
+
+#language-select{
+    border: 2px solid aliceblue;
+    border-radius: 20px;
+    padding: 10px;
+    display: absolute;
+    font-size: 0.5em;
+    margin-top: 5%; 
+    text-align: center;
+    color: white;
+    background-color: #000;
+    position: absolute;
+    top: 80%;
+    left: 90%;
+
+}
+
+.bg-image {
+    background-image: url(background.jpg);
+    background-size: cover;
+  }
+
+#controls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    height: 80px;
+    background-color: #000;
+}
+
+#controls button{
+    height: 45px;
+    width: 45px;
+    margin: 2px;
+    color: grey;
+    font-size: 20px;
+    border-radius: 15px;
+}
+
+#controls button:hover{
+    background-color: lightblue;
+    height: 44px;
+    width: 44px;
+}
+
+#controls button:hover{
+    background-color: lightblue;
+    height: 44px;
+    width: 44px;
+}
+
+#player-controls {
+    display: flex;
+    align-items: center;
+  }
+  
+.play-button {
+    border: 3px solid white;
+    border-radius: 50%;
+    display: absolute;
+    /*align-items: center;
+    justify-content: center;*/
+    margin-top: 5%; 
+    position: absolute;
+    top: 10%;
+    left: 90%;
+    width: 60px;
+    height: 60px;
+    background-image: url("play-pause.png");
+    background-size: 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.pause-button {
+    border: 3px solid white;
+    border-radius: 50%;
+    display: absolute;
+    margin-top: 5%; 
+    position: absolute;
+    top: 10%;
+    left: 90%;
+    width: 60px;
+    height: 60px;
+    background-image: url("play-pause.png");
+    background-size: 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+  
