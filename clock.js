@@ -15,6 +15,14 @@ document.getElementById('shorter').addEventListener("click", textSmaller);
 
 window.addEventListener('keydown', textSize);
 
+function textSize(e){
+  if(e.keyCode == 109){
+      textSmaller();
+  } else if(e.keyCode == 107) {
+      textBigger(); 
+  }
+} 
+
 function textBigger(){
     timeFontSize = timeFontSize + 0.1;
     document.getElementById('time').style.fontSize = timeFontSize + "em";
