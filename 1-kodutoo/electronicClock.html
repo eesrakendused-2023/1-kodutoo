@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="electronicClock.css">
+    <script src="electronicClock.js" defer></script>
+    <title>ElectronicalClock</title>
+</head>
+<body>
+
+    <div id="container">
+        <div id="intro">
+            <div id="author"> Johanna Erikson's clock </div>
+            <div id="repo"> <a href="https://github.com/JohannaERIkson/1-kodutoo"> REPOSITORY</a></div>
+        </div>
+        <div id="date">
+            <span class="fire js-2"></span>
+        </div> 
+        <div id="time">
+            <div id="hours">Hours</div>
+            <div id="minutes">Minutes</div>
+            <div id="seconds">Seconds</div>
+            <div id="buttonsTime">
+                <button id="bigger">Bigger font</button>
+                <button id="smaller">Smaller font</button>
+                <button type="button" onclick="changeColorLight()">Light pink</button>
+                <button type="button" onclick="changeColorDark()">Hot pink</button>
+                <button type="button" onclick="changeColorBlack()">Back to black</button>
+            </div>
+        </div>
+    <div id="day"> Day </div>
+        <div id="buttonsDay">
+            <button type="button" onclick="changeColorLight2()">Light pink</button>
+            <button type="button" onclick="changeColorDark2()">Hot pink</button>
+            <button type="button" onclick="changeColorBlack2()">Back to black</button>
+        </div>
+
+</body>
+</html>
