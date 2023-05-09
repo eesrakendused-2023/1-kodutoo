@@ -1,0 +1,124 @@
+body {
+	font-family: "Lucida Console";
+	background-color: rgba(243, 8, 141, 0.468);
+	color: #C71585;
+	margin: 20px;
+	background-image: url("https://greeny.cs.tlu.ee/~rinde/media/pics/background/tlu_h200.png");
+	background-repeat: no-repeat, repeat;
+	background-position: top left,top right;
+	background-size: 30px,1000px;
+	background-attachment: fixed;;
+}
+#time{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+    color:rgba(221, 4, 4, 0.836);
+}
+
+#time:hover{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+    color:rgba(237, 14, 192, 0.836);
+}
+
+h1{
+    color:rgba(150, 3, 3, 0.639);
+    text-align: center;
+    font-size: 3em;
+}
+
+h1:hover{
+    color:rgba(255, 147, 5, 0.836);
+    text-align: left;
+    font-size: 1.2em;
+}
+
+h2{
+    color:rgba(130, 30, 160, 0.502);
+    font-size: 2em;
+}
+h3{
+    color:rgba(130, 30, 160, 0.502);
+    font-size: 2em;
+}
+h4{
+    color:rgba(130, 30, 160, 0.502);
+    font-size: 2em;
+}
+
+h5{
+    color:rgb(0, 0, 0);
+    text-align: center;
+    font-size: 2em;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    height: 85vh;
+    background-color: rgb(183, 7, 136);
+    background-image:url("https://greeny.cs.tlu.ee/~krugjeli/clock/01.png");
+    align-items: center;
+    justify-content: space-around;
+}
+
+#controls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgb(225, 12, 79);
+    background-image:url("https://greeny.cs.tlu.ee/~krugjeli/clock/Barbie_Logo.svg.png");
+    background-image:1px;
+    height: 60px;
+    
+}
+
+#controls button{
+    height: 26px;
+    width: 26px;
+    margin: 2px;
+    background-color: rgb(235, 150, 150);
+    font-size: 20px;
+    padding: 0px;
+    border-radius: 20px;
+}
+
+#controls button:hover{
+    color:rgb(239, 138, 175);
+    background-color: rgb(242, 23, 34);
+    height: 28px;
+    width: 28px;
+}
+#name{
+    color: rgb(103, 11, 11);
+    position: bottom left;
+    font-family:"Fantasy";
+    font-size: 15px;
+    width: 1200px;
+    font-weight: 900;
+    top: 100px;
+}
+
+#viide{
+    color: #C71585;
+    position: center right;
+    font-family:"Fantasy";
+    font-size: 15px;
+}
+#minumusic button{
+    align-items: end;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    }

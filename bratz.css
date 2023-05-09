@@ -1,0 +1,33 @@
+.trans_photo_1 {
+	transform:scale(.75);/*sulgudes 10 kraadi (deg - degree)  translate-liiguta, sulgudes koordinaadid  scale - pildi suurus, sulgudes n-Ã¶ protsent  skew - kalduvus/rÃ¶Ã¶plÃ¼ke*/
+	/*OLENEB JÃ„RJEKORRAST!! kui rotate enne, siis liigub selle kraadi suunas; kui translate enne, siis liigub ekraani jÃ¤rgi*/
+	/*FLIP - scale(-1,1)*/
+	 display: flex;
+	align-items: bottom;
+}
+
+.trans_photo_2 {
+	opacity: .9;	/*opacity - lÃ¤bipaistmatus*/
+	transition-property: all, z-index;	/*kÃµik omadused*/
+	transform:scale(1);
+}
+.trans_photo_3 {
+	transform: rotate(10deg) translate(100px, 0px)	scale(.60) skew(15deg, 0deg)
+}
+
+.trans_photo_4 {	/*pseudo element, kui kursoriga oled pildi kohal*/
+	transform: rotate(-1deg) translate(100px, 0px)	scale(.60) skew(-15deg, 0deg)
+}
+
+.trans_photo_5:hover {	/*pseudo element, kui kursoriga oled pildi kohal*/
+	opacity:.5;
+	transform:scale(.60) 
+}
+
+.trans_photo_6 {	
+	transform: scale(.80);
+}
+.trans_photo_6:hover {	/*pseudo element, kui kursoriga oled pildi kohal*/
+	opacity:.5;
+	transform: scale(1);
+}
