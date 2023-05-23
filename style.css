@@ -1,0 +1,22 @@
+.clock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-size: 5rem;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+#name {
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#options {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
