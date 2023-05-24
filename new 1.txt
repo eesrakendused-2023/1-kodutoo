@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Digital Clock</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body onload="startTime()">
+    <div class="clock" id="clock">
+      <div id="time"></div>
+      <div id="date"></div>
+      <div id="name">Ivan Frolov</div>
+    </div>
+    <div id="options">
+      <label for="fontSize">Font Size:</label>
+      <input type="range" id="fontSize" name="fontSize" min="10" max="100" value="50">
+      <br>
+      <label for="fontFamily">Font Family:</label>
+      <select id="fontFamily" name="fontFamily">
+        <option value="Arial, sans-serif">Arial</option>
+        <option value="Helvetica, sans-serif">Helvetica</option>
+        <option value="Verdana, sans-serif">Verdana</option>
+      </select>
+      <br>
+      <label for="color">Color:</label>
+      <input type="color" id="color" name="color" value="#333333">
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
