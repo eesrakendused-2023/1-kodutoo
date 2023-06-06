@@ -1,0 +1,146 @@
+/* common styles */
+body {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/*party mode styles*/
+#party-btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  font-size: 1.5em;
+  font-family: 'Playfair Display', serif;
+  background-color: #FFE4C4;
+  color: #2F4F4F;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.party-mode {
+  animation: strobe 0.5s infinite;
+  background-color: #FFF;
+}
+
+.party-mode #party-btn {
+  animation: strobe 0.5s infinite;
+  background-color: #FFF;
+}
+
+.party-mode #mode-switch {
+  animation: strobe 0.5s infinite;
+  background-color: #FFF;
+}
+
+@keyframes strobe {
+  0% { background-color: #F00; }
+  10% { background-color: #FF0; }
+  20% { background-color: #0F0; }
+  30% { background-color: #0FF; }
+  40% { background-color: #00F; }
+  50% { background-color: #F0F; }
+  60% { background-color: #FF0; }
+  70% { background-color: #0F0; }
+  80% { background-color: #0FF; }
+  90% { background-color: #00F; }
+  100% { background-color: #F0F; }
+}
+
+
+h1, h2 {
+  margin: 0;
+  text-align: center;
+}
+
+/* clock styles */
+#clock {
+  font-size: 10vw;
+  text-align: center;
+}
+
+
+/* date styles */
+#date {
+  font-size: 2vw;
+  position: absolute;
+  top: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* name styles */
+#name {
+  font-size: 1.5vw;
+  font-family: 'Playfair Display', serif;
+  position: absolute;
+  top: 2%;
+  right: 2%;
+}
+
+/* mode switch styles */
+#mode-switch {
+  background-color: #FFE4C4;
+  color: #2F4F4F;
+  font-size: 1.5vw;
+  font-family: 'Playfair Display', serif;
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 1vw 2vw;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* day mode styles */
+body {
+  background-color: #FFE4C4;
+  color: #2F4F4F;
+}
+
+/* night mode styles */
+body.dark-mode {
+  background-color: #2F4F4F;
+  color: #FFE4C4;
+}
+
+.dark-mode #mode-switch {
+  background-color: #FFE4C4;
+  color: #2F4F4F;
+}
+
+.dark-mode #party-btn {
+  background-color: #2F4F4F;
+  color: #FFE4C4;
+}
+
+.dark-mode #clock {
+  color: #FFE4C4;
+}
+
+/* media query styles */
+@media only screen and (max-width: 600px) {
+  #name {
+    position: absolute;
+    top: auto;
+    right: auto;
+    bottom: 2%;
+    left: 2%;
+    text-align: left;
+  }
+  #mode-switch {
+    position: absolute;
+    top: auto;
+    right: auto;
+    bottom: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
